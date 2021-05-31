@@ -1,4 +1,4 @@
-﻿namespace EF_Core
+﻿namespace Linq_To_Entities
 {
 	public class User
 	{
@@ -7,13 +7,9 @@
 		public string Email { get; set; }
 		public string Role { get; set; }
 
-		/// <summary>
-		/// Внешний ключ
-		/// </summary>
+		// Внешний ключ
 		public int CompanyId { get; set; }
-		/// <summary>
-		/// Навигационное свойство
-		/// </summary>
+		// Навигационное свойство
 		public Company Company { get; set; }
 	}
 }

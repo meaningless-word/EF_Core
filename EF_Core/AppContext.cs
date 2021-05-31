@@ -1,7 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EF_Core
 {
@@ -12,8 +9,17 @@ namespace EF_Core
 		/// </summary>
 		public DbSet<User> Users { get; set; }
 
+		public DbSet<Company> Companies { get; set; }
+
 		public AppContext()
 		{
+			/*
+			 * Мы добавили коллекцию Companies для работы с таблицей компаний. 
+			 * Поскольку мы изменили модель, мы не сможем просто так соотнести старые таблицы, которые уже были в БД, с новыми моделями. 
+			 * Для этого мы добавили строку для удаления БД при запуске приложения — Database.EnsureDeleted(), 
+			 * чтобы затем создавать её через использование Database.EnsureCreated().
+			 */
+			Database.EnsureDeleted();
 			Database.EnsureCreated();
 		}
 
