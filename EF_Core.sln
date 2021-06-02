@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_Core", "EF_Core\EF_Core.csproj", "{9D0D193F-0AAD-43E5-ABCC-8A2D429480AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EF_Core", "EF_Core\EF_Core.csproj", "{9D0D193F-0AAD-43E5-ABCC-8A2D429480AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One-To-One", "One-To-One\One-To-One.csproj", "{199EE2C9-FB2E-4673-B862-E3B565FAFF7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "One-To-One", "One-To-One\One-To-One.csproj", "{199EE2C9-FB2E-4673-B862-E3B565FAFF7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One-To-Many", "One-To-Many\One-To-Many.csproj", "{4413A386-8204-4B6C-B5D1-B3BB38490995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "One-To-Many", "One-To-Many\One-To-Many.csproj", "{4413A386-8204-4B6C-B5D1-B3BB38490995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Many-To-Many", "Many-To-Many\Many-To-Many.csproj", "{B3115DD5-D494-434A-BD50-3F8A0B70ECFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Many-To-Many", "Many-To-Many\Many-To-Many.csproj", "{B3115DD5-D494-434A-BD50-3F8A0B70ECFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq-To-Entities", "Linq-To-Entities\Linq-To-Entities.csproj", "{CBA6C436-B8D0-4D38-99D4-7A6F6C46D291}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq-To-Entities", "Linq-To-Entities\Linq-To-Entities.csproj", "{CBA6C436-B8D0-4D38-99D4-7A6F6C46D291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migration-test", "Migration-test\Migration-test.csproj", "{BEB09B55-D113-463C-9095-D13E86713008}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CBA6C436-B8D0-4D38-99D4-7A6F6C46D291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBA6C436-B8D0-4D38-99D4-7A6F6C46D291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBA6C436-B8D0-4D38-99D4-7A6F6C46D291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB09B55-D113-463C-9095-D13E86713008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB09B55-D113-463C-9095-D13E86713008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB09B55-D113-463C-9095-D13E86713008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB09B55-D113-463C-9095-D13E86713008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

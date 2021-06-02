@@ -1,4 +1,6 @@
-﻿namespace EF_Core
+﻿using System.Linq;
+
+namespace EF_Core
 {
 	class Program
 	{
@@ -9,7 +11,6 @@
 			// Поскольку DbContext реализует интерфейс IDisposable, мы можем использовать конструкцию using. Обернём создание контекста в using:
 			using (var db = new AppContext())
 			{
-				/*
 				// Поскольку ORM позволяет работать с БД через объекты, то создадим несколько экземпляров созданного нами класса User:
 				var user1 = new User { Name = "Arthur", Role = "admin" };
 				var user2 = new User { Name = "Klim", Role = "User" };
@@ -45,7 +46,6 @@
 				var firstUser = db.Users.FirstOrDefault();
 				firstUser.Email = "simpleemail@gmail.com";
 				db.SaveChanges();
-				*/
 
 
 				/*

@@ -9,8 +9,6 @@ namespace EF_Core
 		/// </summary>
 		public DbSet<User> Users { get; set; }
 
-		public DbSet<Company> Companies { get; set; }
-
 		public AppContext()
 		{
 			/*
